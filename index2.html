@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/6.0.4/esm/ionicons.min.js" integrity="sha512-J4LkJr/AeK/KXjqkfb/65C4jzT4gG7BDqH9OtiOzCmULhWdKGppS3dCCzo0bmFULnZkajr4esopJYYLOLz
+        uznw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/3929e16ef5.js" crossorigin="anonymous"></script>
+    <script src="{% static 'network/functions.js' %}"></script>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        background: url(31-6-784x441.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+
+
+    .container {
+        background-color: #cac7c7;
+        border-radius: 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        line-height: 45px;
+        /* margin-top: 370px; */
+
+    }
+
+    #heart {
+        font-size: 25px;
+    }
+
+    #heart:hover {
+        color: red;
+    }
+
+    .all {
+        margin-top: 370px;
+        opacity: 2;
+    }
+
+    .all p {
+        color: rgb(223, 11, 226);
+        opacity: .9;
+        font-weight: 500;
+        text-transform: capitalize;
+        font-size: 1.4rem
+    }
+</style>
+
+
+<body>
+
+
+    <div align="center">
+        <div class="all">
+
+
+            <p>Нажми на него</p><br>
+            <div class="container">
+                <i id="heart" class="far fa-heart" class="heartt" onclick="shdh()"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+
+    const heart = document.querySelector('.heartt');
+
+    const shdh = () => {
+        alert('Ура ты справилась ты самая лучшая ♥')
+    }
+
+
+    heart.addEventListener('click', shdh);
+</script>
+
+
+</html>

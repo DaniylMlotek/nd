@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        background: black;
+    }
+
+    .btn {
+
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: none;
+        border: 1px solid lightblue;
+        color: aqua;
+        box-shadow: 0px 0px 40px lightblue;
+        padding: 0 40px;
+        width: 152px;
+        height: 50px;
+        border-radius: 8px;
+        cursor: pointer;
+
+    }
+</style>
+
+<body>
+
+    <a href='index2.html' target="_blank"><button type="button" class="btn">Submit</button></a>
+
+
+</body>
+
+<script>
+    const btn = document.querySelector('.btn')
+    var position;
+
+    btn.addEventListener('mouseover', function () {
+        position ? (position = 0) : (position = 150);
+        btn.style.transform = `translate(${position}px, 0px)`;
+        btn.style.translate = "all 0.9s easy";
+    })
+
+</script>
+
+</html>
